@@ -1,5 +1,7 @@
 # redux-act-fn [![Build Status](https://travis-ci.org/mastilver/redux-act-fn.svg?branch=master)](https://travis-ci.org/mastilver/redux-act-fn)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mastilver/redux-act-fn.svg)](https://greenkeeper.io/)
+
 > Reducing the boilerplate of creating thunk actions based on [redux-act](https://github.com/pauldijou/redux-act)
 
 
