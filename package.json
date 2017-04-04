@@ -1,6 +1,6 @@
 {
   "name": "redux-act-fn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reducing the boilerplate of creating thunk actions based on redux-act",
   "license": "MIT",
   "repository": "mastilver/redux-act-fn",
