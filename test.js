@@ -92,7 +92,7 @@ test('metaReducer', t => {
 
     function dispatch({type, meta}) {
         if (type === 'LOGIN_5_BEFORE') {
-            t.is(meta, 'b')
+            t.is(meta, 'b');
         } else if (type === 'LOGIN_5_AFTER') {
             t.is(meta, 'a');
         }

@@ -1,6 +1,6 @@
 {
   "name": "redux-act-fn",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "My riveting module",
   "license": "MIT",
   "repository": "mastilver/redux-act-fn",
@@ -13,7 +13,8 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && ava",
+    "prepublish": "babel src --out-dir lib"
   },
   "files": [
     "index.js"
@@ -26,7 +27,15 @@
   },
   "devDependencies": {
     "ava": "^0.18.2",
+    "babel-cli": "^6.24.0",
+    "babel-preset-env": "^1.3.2",
+    "babel-register": "^6.24.0",
     "xo": "^0.18.1"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   },
   "xo": {
     "esnext": true,
@@ -45,5 +54,11 @@
       "lcov",
       "text"
     ]
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
   }
 }
